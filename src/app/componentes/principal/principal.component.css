@@ -1,0 +1,144 @@
+/* Estilo global para el cuerpo de la página */
+body {
+    position: relative;
+    font-family: "Times New Roman", serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff; /* Cambio de fondo a blanco */
+   
+  }
+  
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(images/uleam-acceso-principal.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    filter: blur(3px);
+    z-index: -1;
+  }
+  
+  /* Estilo del encabezado */
+
+
+header {
+    background-color: rgba(9, 143, 9, 0.8);
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1; /* Añade una capa superior para el encabezado */
+  }
+  
+  /* Estilo del contenido principal */
+  main {
+    padding-top: 80px; /* Añade un espacio para evitar superposición con el encabezado */
+  }
+  
+  /* Estilo del pie de página */
+  footer {
+    background-color: rgba(9, 143, 9, 0.8);
+    color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 1; /* Añade una capa superior para el pie de página */
+  }
+  
+  
+  header h1 {
+    font-size: 32px;
+    margin: 0;
+  }
+  
+  .menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu li {
+    display: inline;
+    margin: 0 10px;
+  }
+  
+  .menu a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+  
+  }
+  a:hover{
+    color: #ff0000;
+  }
+  p {
+    line-height: 1.5; /* Puedes ajustar el valor según tus necesidades */
+  }
+  
+  /* Estilo del contenido principal */
+  .container {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .inicio {
+    font-size: 24px;
+    color: rgba(9, 143, 9, 0.8); /* Cambio de color a verde */
+  }
+  
+  .message {
+    font-size: 16px;
+  }
+  
+  /* Estilo de la sección de características */
+  .features {
+    background-color: #ffffff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .feature {
+    flex-basis: calc(33.33% - 20px);
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .feature h3 {
+    font-size: 20px;
+    color: #ff0000; /* Cambio de color a rojo */
+  }
+  
+
+  
+  /* Estilo de los enlaces */
+  a {
+    color: rgba(9, 143, 9, 0.8); /* Cambio de color a verde */
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  .menu a:hover {
+    text-decoration: none;
+    color: #ff0000; /* Cambio de color a rojo en el hover */
+  }
+  
